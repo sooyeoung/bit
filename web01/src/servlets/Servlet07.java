@@ -64,7 +64,7 @@ public class Servlet07 extends HttpServlet {
     out.println("</head>");
     out.println("<body>");
     out.println("<h1>단위 변환</h1>");
-    out.println("<form action='UnitConv' method='post'>");
+    out.println("<form action='UnitConv' method=''>");
     if (value == 0) {
       out.println("<input type=\"text\" name=\"v\">");
     } else {
@@ -92,23 +92,4 @@ public class Servlet07 extends HttpServlet {
     out.println("</html>");
     
   }
-  
-  @Override
-  protected void doPost(HttpServletRequest request, HttpServletResponse response)
-      throws ServletException, IOException {
-    doGet(request, response);
-  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

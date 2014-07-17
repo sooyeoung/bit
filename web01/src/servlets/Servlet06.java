@@ -37,27 +37,15 @@ public class Servlet06 extends HttpServlet {
     PrintWriter out = response.getWriter();
     out.println("<html>");
     out.println("<head>");
-    out.println("  <title>계산 결과</title>");
+    out.println("<title>계산 결과</title>");
     out.println("</head>");
     out.println("<body>");
+    //out.println(v1+ op + v2+ "=" + result);
     out.format("  %1$.2f %2$s %3$.2f = %4$.2f\n", v1, op, v2, result);
     //out.println(v1 + " " + op + " " + v2 + " = " + result);
     out.println("</body>");
     out.println("</html>");
-  }
+  
+ }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
